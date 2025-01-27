@@ -48,6 +48,7 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "rest_framework",
     "drf_spectacular",
+    'whitenoise.runserver_nostatic',
 ]
 
 LOCAL_APPS = [
@@ -159,7 +160,7 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "Django Rest API",
     "DESCRIPTION": DESCRIPTION,
     "VERSION": "1.0",
-    "SERVE_INCLUDE_SCHEMA": False,
+    "SERVE_INCLUDE_SCHEMA": True,
 }
 
 SIMPLE_JWT = {
